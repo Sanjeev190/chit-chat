@@ -4,7 +4,7 @@
 
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import Homepage from './pages/Homepage'
-import Chatpage from './pages/chatpage'
+import Chatpage from './pages/Chatpage'
 import './App.css'
 import ChatProvider from './Contextapi/ChatProvider'
 
