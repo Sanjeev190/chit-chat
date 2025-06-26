@@ -3,7 +3,7 @@ import { useState } from "react"
 import { useEffect } from "react"
 import {useNavigate} from 'react-router-dom'
 // import {useHistory} from 'react-router-dom'
-import Chatpage from "../../pages/chatpage"
+
 function Signup(){
     const [name,setName]=useState()
     const [email,setEmail]=useState()
