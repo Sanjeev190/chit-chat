@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.App {
+  min-height: 100vh;
+  background-image: url('http://pixelstalk.net/wp-content/uploads/2016/03/Background-dark-blue-wallpaper-HD.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.custom-font {
+  font-family: 'Work Sans', sans-serif;
+}
