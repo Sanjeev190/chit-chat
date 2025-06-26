@@ -27,7 +27,7 @@ const handleSearch=async()=>{
   }
   try{
   
-  const res = await fetch(`http://localhost:5000/user?search=${search}`, {
+  const res = await fetch(`https://chit-chat-5a6h.onrender.com/user?search=${search}`, {
     method: 'GET',
    headers: {
         Authorization: `Bearer ${user.token}`, // ✅ space added here
@@ -53,7 +53,7 @@ if(res.ok){
 }
 const accessChat=async(userId)=>{
   try{
- const res=await fetch('http://localhost:5000/chats',{
+ const res=await fetch('https://chit-chat-5a6h.onrender.com/chats',{
   method:'POST',
   headers:{
     "Content-Type": "application/json",

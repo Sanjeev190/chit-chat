@@ -15,7 +15,7 @@ const handlelogin=async(e)=>{
     // formData.append('email',email)
     // formData.append('password',password)
     try{
-const res=await fetch('http://localhost:5000/user/login',{
+const res=await fetch('https://chit-chat-5a6h.onrender.com/user/login',{
     method:'POST',
      headers: {
     'Content-Type': 'application/json'

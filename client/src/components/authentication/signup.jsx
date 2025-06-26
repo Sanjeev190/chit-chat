@@ -33,7 +33,7 @@ function Signup(){
 }
 
         try{
-            const res=await fetch('http://localhost:5000/user/signup',{
+            const res=await fetch('https://chit-chat-5a6h.onrender.com/user/signup',{
                 method:'POST',
                 body:formData
             })
@@ -136,7 +136,5 @@ function Signup(){
 </div>
     </>
 }
-// Api key:682935616639225
-// APi secret:7OL29AXOz0BhTe6mLeh3gx5r6G8
-// cloud name:chit-chat190
+
 export default Signup

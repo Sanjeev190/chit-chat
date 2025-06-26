@@ -34,7 +34,7 @@ const closeAddModal=()=>{
    }
    try{
     setModalLoading(true)
-    const res=await fetch(`http://localhost:5000/user?search=${search}`,{
+    const res=await fetch(`https://chit-chat-5a6h.onrender.com/user?search=${search}`,{
       method:'GET',
       headers:{
         Authorization:`Bearer ${user.token}`
@@ -64,7 +64,7 @@ console.log(selectedChat)
 
 // if(selectedChat.users.include(usertoAdd._id))
 try{
-const res=await fetch(`http://localhost:5000/chats/groupadd`,{
+const res=await fetch(`https://chit-chat-5a6h.onrender.com/chats/groupadd`,{
   method:'PUT',
   headers:{
     "Content-Type":"application/json",
@@ -93,7 +93,7 @@ if(res.ok){
 const handleRemoveUser=async(usertoRemove)=>{
   console.log('you click a delete chat button')
 try{
-  const res =await fetch("http://localhost:5000/chats/group",{
+  const res =await fetch("https://chit-chat-5a6h.onrender.com/chats/group",{
     method:'PUT',
     headers:{
       "Content-Type":"application/json",
@@ -122,7 +122,7 @@ const getSender = () => {
       if (!selectedChat) return;
       try {
         setLoading(true);
-        const res = await fetch(`http://localhost:5000/chats/${selectedChat._id}`, {
+        const res = await fetch(`https://chit-chat-5a6h.onrender.com/chats/${selectedChat._id}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${user.token}`,
@@ -189,7 +189,7 @@ return()=>{
     console.log('button clicked')
     if (!newMessage.trim()) return ;
     try {
-      const res = await fetch("http://localhost:5000/chats/message", {
+      const res = await fetch("https://chit-chat-5a6h.onrender.com/chats/message", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -17,7 +17,7 @@ const ChatContext=createContext()
         const userInfo=JSON.parse(localStorage.getItem("userInfo"))
        if(userInfo){
         setUser(userInfo)
-        const newSocket=io("http://localhost:5000",{
+        const newSocket=io("https://chit-chat-5a6h.onrender.com",{
             transports:["websocket"]  //extra code to  force up teh socket
         })
         setSocket(newSocket)

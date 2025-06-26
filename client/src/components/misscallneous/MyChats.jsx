@@ -44,7 +44,7 @@ const modalClose=()=>{
     }
     try{
         setLoading(true)
-        const res=await fetch(`http://localhost:5000/user?search=${search}`,{
+        const res=await fetch(`https://chit-chat-5a6h.onrender.com/user?search=${search}`,{
             method:'GET',
             headers:{
                 Authorization: `Bearer ${user.token}`
@@ -70,7 +70,7 @@ setLoading(false)
     if(!groupName||selectedUsers.length<2){
      return  alert('plese enter the group name and select at leats 2 users') }
         try{
-            const res= await fetch(`http://localhost:5000/chats/group`,{
+            const res= await fetch(`https://chit-chat-5a6h.onrender.com/chats/group`,{
                 method:'POST',
                 headers:{
                     "Content-Type":"application/json",
@@ -106,7 +106,7 @@ setLoading(false)
    const fetchChats=async()=>{
     try{
         console.log(user.token)
-        const res=await fetch("http://localhost:5000/chats",{
+        const res=await fetch("https://chit-chat-5a6h.onrender.com/chats",{
             method:'GET',
              headers: {
         Authorization:`Bearer ${user.token}`,
